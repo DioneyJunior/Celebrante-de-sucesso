@@ -12,6 +12,16 @@
   border-radius: 1rem;
 }
 
+/* navbar */
+.nav {
+  background: url("public/media/areias.png") no-repeat center center;
+  padding: 5%;
+  margin-bottom: 3%;
+  background-size: cover;
+}
+ul {
+  list-style: none;
+}
 .text-gold {
   color: #ce8c36;
 }
