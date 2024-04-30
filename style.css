@@ -26,3 +26,39 @@ ul {
   color: #ce8c36;
 }
 
+/* btn-custom */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-custom {
+  font-size: 24px;
+  padding: 20px 40px;
+  background-color: #e9c67c;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #f3ce86;
+}
+
+/* btn media queries */
+@media (max-width: 768px) {
+  .btn-custom {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-custom {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
