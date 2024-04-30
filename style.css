@@ -12,6 +12,30 @@
   border-radius: 1rem;
 }
 
+/* página de texto */
+.contact-overlay {
+  background-color: rgba(0, 0, 0, 0.664);
+  margin-top: 150px;
+  margin-bottom: 150px;
+  border-radius: 1rem;
+}
+
+.course-page {
+  background: url("public/media/Dioney_Celebrante.jpg") no-repeat center center
+    fixed;
+  height: auto;
+  background-size: cover;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
 /* navbar */
 .nav {
   background: url("public/media/areias.png") no-repeat center center;
