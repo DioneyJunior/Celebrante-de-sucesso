@@ -1,9 +1,9 @@
 .video-container {
   position: relative;
-  padding-bottom: 60%;
+  padding-bottom: 56.25%;
 }
 
-.video-container video {
+.video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
