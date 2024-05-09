@@ -21,9 +21,62 @@
 }
 
 .course-page {
-  background: url("/public/media/Dioney_Celebrante.jpg") no-repeat center center fixed;
+  background: url("/public/media/Dioney_Celebrante.jpg") no-repeat center center
+    fixed;
   height: auto;
   background-size: cover;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-caption h5 {
+  color: white;
+}
+
+.carousel-caption .slide-divider {
+  display: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+}
+
+.carousel-control-prev-icon:before {
+  content: "";
+  display: inline-block;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(135deg);
+}
+
+.carousel-control-next-icon:before {
+  content: "";
+  display: inline-block;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+ol {
+  list-style: none;
 }
 
 html,
