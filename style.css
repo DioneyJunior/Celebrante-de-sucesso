@@ -141,6 +141,22 @@ ul {
   }
 }
 
+/* icons */
+
+.about-icon {
+  width: 15%;
+}
+@media (max-width: 768px) {
+  .about-icon {
+    width: 20%;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-icon {
+    width: 20%;
+  }
+}
 /* footer */
 
 footer {
