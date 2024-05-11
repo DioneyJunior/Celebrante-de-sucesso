@@ -216,3 +216,27 @@ footer {
   opacity: 0.4;
   font-weight: 200;
 }
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #ce9e60;
+  padding: 5px;
+}
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: #e99f3e;
+}
