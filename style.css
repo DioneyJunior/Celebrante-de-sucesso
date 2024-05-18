@@ -164,6 +164,13 @@ ul {
   padding: 12px 30px;
 }
 
+.btnc2:hover,
+.btnc2:active,
+.btnc2:focus {
+  font-size: 18px;
+  padding: 12px 30px;
+}
+
 .accordion-header .accordion-button {
   color: #000 !important;
   font-weight: bold;
@@ -202,7 +209,9 @@ ul {
   border: none;
 }
 
-.bc4:hover {
+.bc4:hover,
+.bc4:focus,
+.bc4:active {
   background-color: #2ead43;
   color: #fff;
 }
@@ -230,7 +239,11 @@ ul {
 }
 
 @media (max-width: 576px) {
-  .btn-custom {
+
+  .btn-custom,
+  .btn-custom:active,
+  .btn-custom:focus,
+  .btn-custom:hover {
     font-size: 18px;
     padding: 12px 24px;
   }
