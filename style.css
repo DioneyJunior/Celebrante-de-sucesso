@@ -1,3 +1,7 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -21,10 +25,11 @@
 }
 
 .course-page {
-  background: url("/public/media/Dioney_Celebrante.jpg") no-repeat center center
-    fixed;
+  background: url("/public/media/Dioney_Celebrante.jpg") no-repeat center center fixed;
   height: auto;
   background-size: cover;
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
 }
 
 .carousel-item img {
@@ -50,31 +55,37 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.0);
+  border-radius: 1000px;
+  /* padding: 10px; */
+  width: 60px;
+  height: 60px;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
   width: auto;
+  padding: 10px;
 }
 
 .carousel-control-prev-icon:before {
   content: "";
-  display: inline-block;
+  display: none;
   border: solid white;
   border-width: 0 2px 2px 0;
   padding: 3px;
-  transform: rotate(135deg);
+  /* transform: rotate(135deg); */
 }
 
 .carousel-control-next-icon:before {
   content: "";
-  display: inline-block;
+  display: none;
   border: solid white;
   border-width: 0 2px 2px 0;
   padding: 3px;
-  transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
 }
+
 ol {
   list-style: none;
 }
@@ -101,7 +112,18 @@ ul {
 }
 
 .text-gold {
-  color: #ce8c36;
+  color: #ce9e60;
+}
+
+.text-golden {
+  color: #f3ad45;
+}
+
+.text-gold-slide {
+  color: #f3ad45 !important;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 /* btn-custom */
@@ -111,19 +133,78 @@ ul {
   box-sizing: border-box;
 }
 
-.btn-custom {
-  font-size: 24px;
+.btn-custom,
+.btn-custom:focus {
+  font-size: 26px;
+  font-weight: bold;
   padding: 20px 40px;
-  background-color: #e9c67c;
-  color: #000;
+  background-color: #e7a23b;
+  color: #fff;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.btn-custom:hover {
-  background-color: #f3ce86;
+.btn-custom:hover,
+.btn-custom:visited,
+.btn-custom:active {
+  background-color: #238533 !important;
+  color: #fff !important;
+}
+
+.btn-custom:active {
+  background-color: #2ead43 !important;
+  color: #fff !important;
+}
+
+.btnc2 {
+  background-color: #2ead43;
+  font-size: 18px;
+  padding: 12px 30px;
+}
+
+.accordion-header .accordion-button {
+  color: #000 !important;
+  font-weight: bold;
+}
+
+.accordion-button {
+  background-color: #efefef;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #efefef;
+  box-shadow: none;
+}
+
+.accordion-button {
+  box-shadow: none !important;
+}
+
+.bc3,
+.bc3:hover {
+  font-size: 20px;
+  padding: 6px 45px;
+  width: auto !important;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.bc4,
+.bc4:hover {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px 35px;
+  background-color: #e7a23b;
+  color: #fff;
+  border: none;
+}
+
+.bc4:hover {
+  background-color: #2ead43;
+  color: #fff;
 }
 
 /* btn media queries */
@@ -131,6 +212,20 @@ ul {
   .btn-custom {
     font-size: 20px;
     padding: 15px 30px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 1000px;
+    /* padding: 10px; */
+    width: 45px;
+    height: 45px;
+  }
+
+  .text-gold-slide {
+    font-size: 16px;
+    margin: 0;
   }
 }
 
@@ -146,6 +241,7 @@ ul {
 .about-icon {
   width: 15%;
 }
+
 @media (max-width: 768px) {
   .about-icon {
     width: 20%;
@@ -157,11 +253,12 @@ ul {
     width: 20%;
   }
 }
+
 /* footer */
 
 footer {
   position: relative;
-  background-color: #000000;
+  background-color: #121418;
   bottom: 0;
   left: 0;
   right: 0;
@@ -185,7 +282,6 @@ footer {
   color: #ce9e60;
   font-size: 2.1rem;
   font-weight: 500;
-  text-transform: capitalize;
   margin-bottom: 5px;
 }
 
@@ -194,15 +290,15 @@ footer {
 }
 
 .footer-bottom {
-  background: #111111;
+  background: #000;
   padding: 10px;
   text-align: center;
+  color: #ddd
 }
 
 .footer-bottom p {
   font-size: 14px;
   word-spacing: 2px;
-  text-transform: capitalize;
 }
 
 .footer-bottom p a {
@@ -216,6 +312,7 @@ footer {
   opacity: 0.4;
   font-weight: 200;
 }
+
 .socials {
   list-style: none;
   display: flex;
@@ -223,20 +320,31 @@ footer {
   justify-content: center;
   padding-left: 0;
 }
+
 .socials li {
   margin: 0 10px;
 }
 
 .socials a {
   text-decoration: none;
-  color: #ce9e60;
+  color: #f3ad45;
   padding: 5px;
 }
-.socials a i {
-  font-size: 1.1rem;
+
+.socials a {
+  font-size: 24px;
   width: 20px;
   transition: color 0.4s ease;
 }
-.socials a:hover i {
+
+.socials a:hover {
   color: #e99f3e;
+}
+
+.text-success {
+  color: #2ead43 !important;
+}
+
+.card-celebrante h4 {
+  font-weight: normal;
 }

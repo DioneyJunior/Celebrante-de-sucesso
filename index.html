@@ -1,249 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Celebrante de Sucesso</title>
-    <!-- Bootstrap Css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="/public/logo.png" />
-  </head>
 
-  <body class="bg-dark text-gold">
-    <div id="wrap">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-        data-interval="false"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="public/media/carousel-bg1.jpeg"
-              class="d-block w-100"
-              alt="Slide 1"
-            />
-            <div class="carousel-caption container-fluid d-none d-md-block">
-              <h5>Torne-se um celebrante profissional</h5>
-              <p>
-                Aprenda a realizar cerimônias plurireligiosas e com efeito
-                civil.
-              </p>
-              <div class="slide-divider"></div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="public/media/carousel-bg2.jpg"
-              class="d-block w-100"
-              alt="Slide 2"
-            />
-            <div class="carousel-caption container-fluid d-none d-md-block">
-              <h5>Complemente sua renda</h5>
-              <p>
-                Aprenda uma atividade em crescimento no Brasil, podendo até se
-                tornar sua principal fonte de renda
-              </p>
-              <div class="slide-divider"></div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="public/media/carousel-bg3.jpg"
-              class="d-block w-100"
-              alt="Slid 3"
-            />
-            <div class="carousel-caption container-fluid d-none d-md-block">
-              <h5>Realize lindas cerimônias no altar</h5>
-              <p>
-                Aprenda a elaborar e conduzir uma cerimônia personalizada do
-                início ao fim.
-              </p>
-              <div class="slide-divider"></div>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Celebrante de Sucesso</title>
+  <link rel="icon" type="image/x-icon" href="/public/fav.webp" />
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://www.malla.ink">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Produtos malla - Lançamento pedro, pedro, pedro">
+  <meta property="og:description"
+    content="O curso CELEBRANTE DE SUCESSO vai te preparar para fazer celebrações de casamento com cerimônias modernas e emocionantes. A profissão de celebrante vem ganhando espaço por ser versátil ao permitir a adoção de vários ritos como tradicional, religioso, plurireligioso, entre outros. Fruto da experiência de 15 anos do Celebrante Dioney Barroca que já realizou mais de 300 casamentos, o curso conta com aulas teóricas que versam sobre legislação, oratória e o passo a passo de uma celebração, além de exemplos práticos.">
+  <meta property="og:image" content="https://curso.cerimonialdioney.com.br/public/og.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="malla.ink">
+  <meta property="twitter:url" content="https://www.malla.ink">
+  <meta name="twitter:title" content="Produtos malla - Lançamento pedro, pedro, pedro">
+  <meta name="twitter:description"
+    content="O curso CELEBRANTE DE SUCESSO vai te preparar para fazer celebrações de casamento com cerimônias modernas e emocionantes. A profissão de celebrante vem ganhando espaço por ser versátil ao permitir a adoção de vários ritos como tradicional, religioso, plurireligioso, entre outros. Fruto da experiência de 15 anos do Celebrante Dioney Barroca que já realizou mais de 300 casamentos, o curso conta com aulas teóricas que versam sobre legislação, oratória e o passo a passo de uma celebração, além de exemplos práticos.">
+  <meta name="twitter:image" content="https://curso.cerimonialdioney.com.br/public/og.png">
+
+  <!-- Bootstrap Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" />
+
+  <script>
+    const checkoutUrl = "https://sun.eduzz.com/ycbf34pp";
+    const default_utm_source = 'site';
+    const default_utm_medium = 'video';
+    const default_utm_campaign = 'lancamento';
+    const default_utm_content = 'site-oferta-padrao';
+    const default_utm_term = 'organico';
+
+    function getUTMParameters() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const utm_source = urlParams.get('utm_source');   // Fonte da campanha, ex: facebook
+      const utm_medium = urlParams.get('utm_medium');   // Tipo de meio, ex: cpc (custo por clique), banner, email
+      const utm_campaign = urlParams.get('utm_campaign'); // Nome específico da campanha
+      const utm_content = urlParams.get('utm_content');
+      const utm_term = urlParams.get('utm_term');
+
+      return {
+        utm_source: utm_source || default_utm_source || null,
+        utm_medium: utm_medium || default_utm_medium || null,
+        utm_campaign: utm_campaign || default_utm_campaign || null,
+        utm_content: utm_content || default_utm_content || null,
+        utm_term: utm_term || default_utm_term || null,
+      };
+    }
+
+    const utmData = getUTMParameters();
+    // console.log(utmData);
+  </script>
+</head>
+
+<body class="bg-dark text-gold">
+  <div id="wrap">
+    <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-ride="carousel"
+      data-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="/public/media/carousel-bg1.jpg?a=1" class="d-block w-100" alt="Slide 1" />
+          <div class="carousel-caption container-fluid">
+            <h5 class="text-gold-slide">Torne-se um celebrante profissional</h5>
+            <p>
+              Aprenda a realizar cerimônias plurireligiosas e com efeito
+              civil.
+            </p>
+            <div class="slide-divider"></div>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-      </div>
-
-      <div class="container-fluid mt-3">
-        <div class="row">
-          <div class="col-12 col-md-8 offset-md-2">
-            <div class="video-container justify-content-center mt-5">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/uqLnWJ4Ibic?si=kHAkGu6dAMn9ia2z"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="text-center mb-2 mt-5">
-              <a
-                href="https://sun.eduzz.com/ycbf34pp"
-                target="_blank"
-                class="btn btn-custom w-75"
-                >Inscreva-se!</a
-              >
-
-              <h2 class="text-success mt-5">Por apenas 12x de R$ 30,36</h2>
-              <p class="text-success mt-2">ou R$ 297,00 à vista</p>
-            </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="/public/media/carousel-bg2.jpg?a=1" class="d-block w-100" alt="Slide 2" />
+          <div class="carousel-caption container-fluid">
+            <h5 class="text-gold-slide">Complemente sua renda</h5>
+            <p>
+              Aprenda uma atividade em crescimento no Brasil, podendo até se
+              tornar sua principal fonte de renda.
+            </p>
+            <div class="slide-divider"></div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="/public/media/carousel-bg3.jpg?a=1" class="d-block w-100" alt="Slid 3" />
+          <div class="carousel-caption container-fluid">
+            <h5 class="text-gold-slide">Realize lindas cerimônias no altar</h5>
+            <p>
+              Aprenda a elaborar e conduzir uma cerimônia personalizada do
+              início ao fim.
+            </p>
+            <div class="slide-divider"></div>
           </div>
         </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
 
-      <!-- about course -->
+    <div id="carouselExampleIndicatorsM" class="carousel slide d-block d-md-none" data-ride="carousel"
+      data-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="/public/media/carousel-bg1-m.jpg" class="d-block w-100" alt="Slide 1" />
+          <div class="carousel-caption container-fluid">
+            <h5 class="text-gold-slide">Torne-se um celebrante profissional</h5>
+            <!-- <p>
+              Aprenda a realizar cerimônias plurireligiosas e com efeito
+              civil.
+            </p> -->
+            <div class="slide-divider"></div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="/public/media/carousel-bg2-m.jpg" class="d-block w-100" alt="Slide 2" />
+          <div class="carousel-caption container-fluid">
+            <h5 class="text-gold-slide">Complemente sua renda</h5>
+            <!-- <p>
+              Aprenda uma atividade em crescimento no Brasil, podendo até se
+              tornar sua principal fonte de renda.
+            </p> -->
+            <div class="slide-divider"></div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="/public/media/carousel-bg3-m.jpg" class="d-block w-100" alt="Slid 3" />
+          <div class="carousel-caption container-fluid">
+            <h5 class="text-gold-slide">Realize lindas cerimônias no altar</h5>
+            <!-- <p>
+              Aprenda a elaborar e conduzir uma cerimônia personalizada do
+              início ao fim.
+            </p> -->
+            <div class="slide-divider"></div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicatorsM" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicatorsM" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
 
-      <div
-        class="container-fluid mt-4 p-4 pb-5"
-        style="background-color: black"
-      >
-        <div class="containe px-1">
-          <h2 class="text-center mt-5 mb-5 pb-5">
-            O Curso Celebrante de Sucesso
-          </h2>
-          <div class="row mt-5">
-            <div class="col-md-4 mt-0 mb-5 mb-md-0">
-              <div class="text-center">
-                <span
-                  ><img
-                    class="mb-4 about-icon"
-                    src="public/media/person.png"
-                    alt=""
-                /></span>
-                <h4 class="pb-3">Aprenda com um profissional experiente</h4>
-                <p class="text-white pt-2">
-                  O Celebrante Dioney Barroca já realiza cerimônias
-                  personalizadas
+    <div class="container-fluid mt-3" id="comprar">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2">
+          <div class="video-container justify-content-center mt-5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uqLnWJ4Ibic?si=kHAkGu6dAMn9ia2z"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="text-center mb-2 mt-5">
+            <button type="button" class="btn btn-custom w-75" data-toggle="modal"
+              data-target="#exampleModal">INSCREVA-SE JÁ!</button>
 
-                  <span class="text-success">a mais de 10 anos </span>
+            <h2 class="text-success mt-5">Por apenas 12x de R$ 30,36</h2>
+            <p class="text-success mt-2">ou R$ 297,00 à vista</p>
 
-                  e já contou
-                  <span class="text-success">
-                    mais de trezentas historias de amor
-                  </span>
+            <a href="#faq" type="button" class="btn bc3 mt-3" data-toggle="modal"
+              data-target="#exampleModal">Dúvidas?</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                  no altar, dessa forma, tem uma vasta experiencia no assundo
-                  abordado nesse curso, preparou
-                  <span class="text-success">
-                    tudo o que existe de mais moderno
-                  </span>
+    <!-- about course -->
 
-                  para que você fique preparado para colocar em prática tudo que
-                  vai aprender e após a conclusão conquistar ganhos
-                  extraordinários com essa nova atividade.
-                </p>
-              </div>
+    <div class="container-fluid mt-4 p-4 pb-5" style="background-color: #121418">
+      <div class="container px-1">
+        <h1 class="text-center mt-5 mb-5 pb-5 text-golden">
+          O Curso Celebrante de Sucesso
+        </h1>
+        <div class="row mt-5">
+          <div class="col-md-4 mt-0 mb-5 mb-md-0">
+            <div class="text-center">
+              <span><img class="mb-4 about-icon" src="/public/media/person.png?a=1" alt="" /></span>
+              <h4 class="pb-3">Aprenda com um profissional experiente</h4>
+              <p class="text-white pt-2">
+                O Celebrante Dioney Barroca já realiza cerimônias
+                personalizadas
+
+                <span class="text-success">a mais de 10 anos </span>
+
+                e já contou
+                <span class="text-success">
+                  mais de trezentas historias de amor
+                </span>
+
+                no altar, dessa forma, tem uma vasta experiencia no assunto
+                abordado nesse curso, preparou
+                <span class="text-success">
+                  tudo o que existe de mais moderno
+                </span>
+
+                para que você fique preparado para colocar em prática tudo que
+                vai aprender e após a conclusão conquistar ganhos
+                extraordinários com essa nova atividade.
+              </p>
             </div>
-            <div class="col-md-4 mb-5 mb-md-0">
-              <div class="text-center">
-                <span
-                  ><img
-                    class="mb-4 about-icon"
-                    src="public/media/cheers.png"
-                    alt=""
-                /></span>
-                <h4>Entre no mundo dos eventos</h4>
-                <p class="text-white pt-5">
-                  Voçê poderá entrar para o mundo de eventos como um
-                  <span class="text-success"> celebrante de sucesso </span>
-                  após concluir o curso, não precisa de experiencia com
-                  comunicação ou oratória, mas se você<span class="text-success"
-                    >já é do ramo de eventos </span
-                  >e trabalha com comunicação esse curso vai te permitir
-                  <span class="text-success"
-                    >agregar valor e aumentar sua renda consideravelmente.
-                  </span>
-                </p>
-              </div>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="text-center">
+              <span><img class="mb-4 about-icon" src="/public/media/cheers.png?a=1" alt="" /></span>
+              <h4>Entre no mundo dos eventos</h4>
+              <p class="text-white pt-5">
+                Voçê poderá entrar para o mundo de eventos como um
+                <span class="text-success"> celebrante de sucesso </span>
+                após concluir o curso, não precisa de experiencia com
+                comunicação ou oratória, mas se você<span class="text-success"> já é do ramo de eventos </span>e
+                trabalha
+                com comunicação esse curso vai te permitir
+                <b class="text-success">agregar valor e aumentar sua renda consideravelmente.
+                </b>
+              </p>
             </div>
-            <div class="col-md-4 mb-5 mb-md-0">
-              <div class="text-center">
-                <span
-                  ><img
-                    class="mb-4 about-icon"
-                    src="public/media/clock.png"
-                    alt=""
-                /></span>
-                <h4 class="pb-4">Estude de Onde Quiser e no seu Tempo</h4>
-                <p class="text-white pt-2">
-                  Você pode acessar as aulas e todo o material de
-                  <span class="text-success">
-                    onde quiser em qualquer tempo</span
-                  >, seu certificado será emitido após completar 75% do curso.
-                  Também poderá tirar suas duvidas
-                  <span class="text-success">
-                    diretamente com o idealizador do curso</span
-                  >, Celebrante Dioney Barroca.
-                </p>
-              </div>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="text-center">
+              <span><img class="mb-4 about-icon" src="/public/media/clock.png?a=1" alt="" /></span>
+              <h4 class="pb-4">Estude de onde quiser e no seu tempo</h4>
+              <p class="text-white pt-2">
+                Você pode acessar as aulas e todo o material de
+                <span class="text-success">
+                  onde quiser em qualquer momento</span>, seu certificado será emitido após completar 75% do curso.
+                Também poderá tirar suas duvidas
+                <span class="text-success">
+                  diretamente com o idealizador do curso</span>, o Celebrante Dioney Barroca.
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div
-        class="container-fluid course-page p-4 p-0 section-padding text-center"
-      >
-        <div
-          class="container p-3 contact-overlay m-0"
-          style="
+    <div class="container-fluid course-page p-4 p-0 section-padding text-center">
+      <div class="container p-3 contact-overlay m-0" style="
             margin-right: 0 !important;
             display: inline-block;
             position: relative;
-          "
-        >
-          <div class="row justify-content-center">
-            <div class="t col-12 col-lg-6 mb-4 badge text-wrap">
-              <div
-                class="empreenda-curso"
-                style="background-color: rgba(131, 112, 112, 0)"
-              >
-                <div class="card-body pt-3 pb-3">
-                  <h1 class="mb-4">O CELEBRANTE</h1>
-                  <h4 class="ps-3 text-start">
-                    A atividade de celebrar casamentos tem crescido muito em
-                    <span class="text-success"> todo o mundo</span>, tendo em
-                    vista que hoje em dia a maioria dos casamentos são
-                    realizados ao ar livre ou em outro ambiente que não seja uma
-                    instituição religiosa (igrejas, templos, etc…). O papel do
-                    celebrante é fundamental pois ele poderá celebrar cerimônias
-                    em qualquer ambiente, podendo conduzir esse momento tão
-                    especial na vida dos noivos.
-                    <br />
-                    <span class="text-success">
-                      Qualquer pessoa pode se tornar um Celebrante </span
-                    >, independente de ter ou não um curso superior.
-                  </h4>
-                </div>
+          ">
+        <div class="row justify-content-center">
+          <div class="t col-12 col-lg-8 mb-4 badge text-wrap">
+            <div class="empreenda-curso" style="background-color: rgba(131, 112, 112, 0)">
+              <div class="card-body pt-3 pb-3 card-celebrante">
+                <h1 class="mb-4">O Celebrante</h1>
+                <h4 class="ps-3 text-start">
+                  A atividade de celebrar casamentos tem crescido muito em
+                  <span class="text-success"> todo o mundo</span>, tendo em
+                  vista que hoje em dia a maioria dos casamentos são
+                  realizados ao ar livre ou em outro ambiente que não seja uma
+                  instituição religiosa (igrejas, templos, etc…). O papel do
+                  celebrante é fundamental pois ele poderá celebrar cerimônias
+                  em qualquer ambiente, podendo conduzir esse momento tão
+                  especial na vida dos noivos.
+                  <br /><br />
+                  <b class="text-success">
+                    Qualquer pessoa pode se tornar um Celebrante</b>, independente de ter ou não um curso superior.
+                </h4>
               </div>
             </div>
           </div>
@@ -251,68 +278,202 @@
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <h3>Curso Celebrante de Sucesso</h3>
-        <p>Torne-se agora um celebrante de sucesso</p>
-      </div>
-      <div>
-        <ul class="socials text-center">
-          <li>
-            <a
-              href="https://www.facebook.com/dioneyfabio.barroca.5"
-              target="_blank"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-facebook"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/celebrantedioney/"
-              target="_blank"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-instagram"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <br />
-      <div class="footer-bottom">
-        <p>
-          © 2024 Curso Celebrante de Sucesso - Todos os direitos reservados |
-          Desenvolvido por
-          <a href="https://github.com/DioneyJunior" target="_blank"
-            >Dioney Junior</a
-          >
-        </p>
-      </div>
-    </footer>
+    <div class="container-fluid mt-4 p-4 pb-5" style="background-color: #121418">
+      <div class="container px-1" id="faq">
+        <h1 class="text-center mt-5 mb-5 text-golden">
+          Dúvidas Frequentes (FAQ)
+        </h1>
+        <div class="row">
+          <div class="col-12 col-md-2"></div>
+          <div class="col-12 col-md-8">
+            <div class="accordion bg-dark" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    COMO VOU RECEBER ACESSO À PLATAFORMA?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    Assim que a sua compra for confirmada, você receberá um e-mail com o seu acesso à nossa
+                    plataforma. Os pagamentos realizados por boleto, podem demorar até 2 dias úteis para serem
+                    confirmados.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    QUAIS SÃO AS FORMAS DE PAGAMENTO?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    As formas de pagamento são: cartão de crédito, à vista ou parcelado. boleto à vista e pix à vista.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    POR QUANTO TEMPO VOU TER ACESSO AO CURSO?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Você terá acesso vitalício.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    A PLATAFORMA DE PAGAMENTOS É SEGURA?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Sim, é uma das maiores empresas de pagamento do mundo. Nossos alunos nunca tiveram nenhum problema
+                    de segurança ao realizarem o pagamento.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    QUANDO TEREI MEU CERTIFICADO?
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Após conclusão de pelo menos 75% do curso.
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+            <a href="#comprar" type="button" class="btn bc4 w-100 mt-5">Quero me tornar um Celebrante!</a>
+          </div>
+          <div class="col-12 col-md-2"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Celebrante de Sucesso</h3>
+      <p>Torne-se agora um celebrante de sucesso</p>
+    </div>
+    <div>
+      <ul class="socials text-center">
+        <li>
+          <a href="https://www.facebook.com/celebrantedioney" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/celebrantedioney/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div class="footer-bottom">
+      <p>
+        © 2024 Celebrante de Sucesso - Todos os direitos reservados
+      </p>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-4 text-dark" id="exampleModalLabel">Matricule-se</h1>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="meuFormulario">
+          <div class="modal-body">
+            <!-- <h5 class="fs-5 text-dark mb-3" id="exampleModalLabel">Cadastre-se</h5> -->
+
+            <div class="mb-3">
+              <label name="name" for="dataName" autocomplete="name" class="form-label text-dark">Nome</label>
+              <input type="text" class="form-control" id="dataName" required>
+            </div>
+
+            <div class="mb-3">
+              <label name="email" for="dataEmail" autocomplete="email" class="form-label text-dark">Email</label>
+              <input type="email" class="form-control" id="dataEmail" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="dataWhatsapp" autocomplete="phone" class="form-label text-dark">Whatsapp /
+                Telefone</label>
+              <input name="phone" type="text" class="form-control" id="dataWhatsapp" required>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <button type="submit" class="btn btn-primary btn-custom btnc2">CONTINUAR PARA A COMPRA</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('meuFormulario').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevenir o comportamento padrão do formulário
+
+      const name = document.getElementById('dataName').value;
+      const email = document.getElementById('dataEmail').value;
+      const wpp = document.getElementById('dataWhatsapp').value;
+
+      if (!name || !email || !wpp) return;
+
+      const novaUrl =
+        checkoutUrl + `?nome=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(wpp)}` +
+        (utmData.utm_source ? `&utm_source=${encodeURIComponent(utmData.utm_source)}` : '') +
+        (utmData.utm_medium ? `&utm_medium=${encodeURIComponent(utmData.utm_medium)}` : '') +
+        (utmData.utm_campaign ? `&utm_campaign=${encodeURIComponent(utmData.utm_campaign)}` : '') +
+        (utmData.utm_content ? `&utm_content=${encodeURIComponent(utmData.utm_content)}` : '') +
+        (utmData.utm_term ? `&utm_term=${encodeURIComponent(utmData.utm_term)}` : '');
+
+      // console.log(novaUrl)
+
+      window.location.href = novaUrl;
+    });
+  </script>
+
+  <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>
