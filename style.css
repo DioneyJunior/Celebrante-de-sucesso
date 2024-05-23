@@ -244,7 +244,7 @@ ul {
   .btn-custom:active,
   .btn-custom:focus,
   .btn-custom:hover {
-    font-size: 18px;
+    font-size: 21px;
     padding: 12px 24px;
   }
 }
@@ -264,6 +264,10 @@ ul {
 @media (max-width: 576px) {
   .about-icon {
     width: 20%;
+  }
+
+  .bcwpp {
+    width: 100% !important;
   }
 }
 
