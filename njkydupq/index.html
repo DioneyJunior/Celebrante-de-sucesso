@@ -42,11 +42,11 @@
 
     function getUTMParameters() {
       const urlParams = new URLSearchParams(window.location.search);
-      const utm_source = urlParams.get('utm_source');   // Fonte da campanha, ex: facebook
-      const utm_medium = urlParams.get('utm_medium');   // Tipo de meio, ex: cpc (custo por clique), banner, email
-      const utm_campaign = urlParams.get('utm_campaign'); // Nome específico da campanha
-      const utm_content = urlParams.get('utm_content');
-      const utm_term = urlParams.get('utm_term');
+      const utm_source = urlParams.get('utm_source').trim();   // Fonte da campanha, ex: facebook
+      const utm_medium = urlParams.get('utm_medium').trim();   // Tipo de meio, ex: cpc (custo por clique), banner, email
+      const utm_campaign = urlParams.get('utm_campaign').trim(); // Nome específico da campanha
+      const utm_content = urlParams.get('utm_content').trim();
+      const utm_term = urlParams.get('utm_term').trim();
 
       return {
         utm_source: utm_source || default_utm_source || null,
@@ -465,12 +465,12 @@
       if (!name || !email || !wpp) return;
 
       const novaUrl =
-        checkoutUrl + `?nome=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(wpp)}` +
-        (utmData.utm_source ? `&utm_source=${encodeURIComponent(utmData.utm_source)}` : '') +
-        (utmData.utm_medium ? `&utm_medium=${encodeURIComponent(utmData.utm_medium)}` : '') +
-        (utmData.utm_campaign ? `&utm_campaign=${encodeURIComponent(utmData.utm_campaign)}` : '') +
-        (utmData.utm_content ? `&utm_content=${encodeURIComponent(utmData.utm_content)}` : '') +
-        (utmData.utm_term ? `&utm_term=${encodeURIComponent(utmData.utm_term)}` : '');
+        checkoutUrl + `?nome=${encodeURIComponent(name.trim())}&email=${encodeURIComponent(email.trim())}&phone=${encodeURIComponent(wpp.trim())}` +
+        (utmData.utm_source ? `&utm_source=${encodeURIComponent(utmData.utm_source.trim())}` : '') +
+        (utmData.utm_medium ? `&utm_medium=${encodeURIComponent(utmData.utm_medium.trim())}` : '') +
+        (utmData.utm_campaign ? `&utm_campaign=${encodeURIComponent(utmData.utm_campaign.trim())}` : '') +
+        (utmData.utm_content ? `&utm_content=${encodeURIComponent(utmData.utm_content.trim())}` : '') +
+        (utmData.utm_term ? `&utm_term=${encodeURIComponent(utmData.utm_term.trim())}` : '');
 
       // console.log(novaUrl)
 
